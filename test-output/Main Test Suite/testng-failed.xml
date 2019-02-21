@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="100" guice-stage="DEVELOPMENT" name="Failed suite [Main Test Suite]" parallel="tests">
+  <test thread-count="100" name="TestNG Grid1(failed)" parallel="classes">
+    <parameter name="node" value="http://192.168.2.50:5558/wd/hub"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.mastek.monark.hybrid.TestsWeb.SecondTest">
+        <methods>
+          <include name="execute"/>
+          <include name="setupTest"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.mastek.monark.hybrid.TestsWeb.SecondTest -->
+    </classes>
+  </test> <!-- TestNG Grid1(failed) -->
+  <test thread-count="100" name="TestNG Grid6(failed)" parallel="classes">
+    <parameter name="node" value="http://192.168.2.50:5557/wd/hub"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.mastek.monark.hybrid.TestsWeb.SeventhTest">
+        <methods>
+          <include name="setupTest"/>
+          <include name="execute"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.mastek.monark.hybrid.TestsWeb.SeventhTest -->
+      <class name="com.mastek.monark.hybrid.TestsWeb.EightTest">
+        <methods>
+          <include name="execute"/>
+          <include name="setupTest"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.mastek.monark.hybrid.TestsWeb.EightTest -->
+      <class name="com.mastek.monark.hybrid.TestsWeb.NinthTest">
+        <methods>
+          <include name="setupTest"/>
+          <include name="execute"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.mastek.monark.hybrid.TestsWeb.NinthTest -->
+    </classes>
+  </test> <!-- TestNG Grid6(failed) -->
+</suite> <!-- Failed suite [Main Test Suite] -->

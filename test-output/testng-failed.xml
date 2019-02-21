@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [MONARK HYBRID]">
+  <test thread-count="5" verbose="2" name="MONARK Test Suite(failed)">
+    <classes>
+      <class name="com.mastek.monark.hybrid.Core.Core">
+        <methods>
+          <include name="execute"/>
+        </methods>
+      </class> <!-- com.mastek.monark.hybrid.Core.Core -->
+    </classes>
+  </test> <!-- MONARK Test Suite(failed) -->
+</suite> <!-- Failed suite [MONARK HYBRID] -->

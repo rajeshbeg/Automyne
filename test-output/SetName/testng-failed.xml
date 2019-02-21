@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SetName]">
+  <listeners>
+    <listener class-name="com.mastek.monark.hybrid.Reporting.ReportListener"/>
+    <listener class-name="com.mastek.monark.hybrid.Reporting.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="002(failed)">
+    <parameter name="appURL" value="https://www.wikipedia.org/"/>
+    <parameter name="tcID" value="002"/>
+    <parameter name="browserType" value="Web-Chrome"/>
+    <classes>
+      <class name="com.mastek.monark.hybrid.TestsWeb.Monark">
+        <methods>
+          <include name="execute"/>
+          <include name="tearDown"/>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- com.mastek.monark.hybrid.TestsWeb.Monark -->
+    </classes>
+  </test> <!-- 002(failed) -->
+</suite> <!-- Failed suite [SetName] -->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sprint 12]">
+  <listeners>
+    <listener class-name="com.mastek.monark.hybrid.Reporting.ReportListener"/>
+    <listener class-name="com.mastek.monark.hybrid.Reporting.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="001(failed)">
+    <parameter name="appURL" value="https://www.wikipedia.org/"/>
+    <parameter name="tcID" value="001"/>
+    <parameter name="browserType" value="Web-IE"/>
+    <classes>
+      <class name="com.mastek.monark.hybrid.TestsWeb.Scenario2">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setupTest"/>
+          <include name="TC001"/>
+        </methods>
+      </class> <!-- com.mastek.monark.hybrid.TestsWeb.Scenario2 -->
+    </classes>
+  </test> <!-- 001(failed) -->
+</suite> <!-- Failed suite [Sprint 12] -->
